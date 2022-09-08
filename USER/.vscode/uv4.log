@@ -1,0 +1,87 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+compiling main.c...
+main.c(20): error:  #20: identifier "WHITE" is undefined
+  int lcd_discolor[14]={	WHITE, BLACK, BLUE,  BRED,      
+main.c(20): error:  #20: identifier "BLACK" is undefined
+  int lcd_discolor[14]={	WHITE, BLACK, BLUE,  BRED,      
+main.c(20): error:  #20: identifier "BLUE" is undefined
+  int lcd_discolor[14]={	WHITE, BLACK, BLUE,  BRED,      
+main.c(20): error:  #20: identifier "BRED" is undefined
+  int lcd_discolor[14]={	WHITE, BLACK, BLUE,  BRED,      
+main.c(21): error:  #20: identifier "GRED" is undefined
+  						GRED,  GBLUE, RED,   	 
+main.c(21): error:  #20: identifier "GBLUE" is undefined
+  						GRED,  GBLUE, RED,   	 
+main.c(21): error:  #20: identifier "RED" is undefined
+  						GRED,  GBLUE, RED,   	 
+main.c(22): error:  #20: identifier "GREEN" is undefined
+  						GREEN, CYAN,BROWN, 			
+main.c(22): error:  #20: identifier "CYAN" is undefined
+  						GREEN, CYAN,BROWN, 			
+main.c(22): error:  #20: identifier "BROWN" is undefined
+  						GREEN, CYAN,BROWN, 			
+main.c(23): error:  #20: identifier "BRRED" is undefined
+  						BRRED, GRAY };
+main.c(23): error:  #20: identifier "GRAY" is undefined
+  						BRRED, GRAY };
+main.c(67): warning:  #223-D: function "KEY_Init" declared implicitly
+  	KEY_Init();							//初始化按键
+main.c(68): warning:  #223-D: function "EXTIX_Init" declared implicitly
+  	EXTIX_Init();						//初始化外部中断
+main.c(69): warning:  #223-D: function "LCD_Init" declared implicitly
+  	LCD_Init();							//初始化LCD
+main.c(71): error:  #20: identifier "POINT_COLOR" is undefined
+      POINT_COLOR = RED;
+main.c(72): warning:  #223-D: function "LCD_ShowString" declared implicitly
+  	LCD_ShowString(30,10,200,16,16,"ATK STM32F103/407");	
+main.c(126): error:  #20: identifier "WKUP_PRES" is undefined
+          case WKUP_PRES:
+main.c(130): error:  #20: identifier "KEY1_PRES" is undefined
+          case KEY1_PRES:
+main.c(134): error:  #20: identifier "KEY2_PRES" is undefined
+          case KEY2_PRES:
+main.c(151): error:  #20: identifier "POINT_COLOR" is undefined
+      POINT_COLOR=BLACK;
+main.c(153): warning:  #223-D: function "LCD_DrawRectangle" declared implicitly
+      LCD_DrawRectangle(5,110,115,314);
+main.c(154): warning:  #223-D: function "LCD_DrawLine" declared implicitly
+      LCD_DrawLine(5,130,115,130);
+main.c(156): warning:  #223-D: function "LCD_ShawString" declared implicitly
+      LCD_ShawString(6,111,110,16,16,"Task1 run:000");
+main.c(161): error:  #7: unrecognized token
+          printf("任务1已运行：%d次\r\n"，task1_num);
+main.c(161): warning:  #224-D: the format string requires additional arguments
+          printf("任务1已运行：%d次\r\n"，task1_num);
+main.c(161): error:  #18: expected a ")"
+          printf("任务1已运行：%d次\r\n"，task1_num);
+main.c(162): warning:  #223-D: function "LCD_Fill" declared implicitly
+          LCD_Fill(6,131,114,313,lcd_discolor[task1_num%14]);//填充区域
+main.c(163): warning:  #223-D: function "LCD_ShawxNum" declared implicitly
+          LCD_ShawxNum(86,111,task_num,3,16,0x80);//实现任务执行次数
+main.c(163): error:  #20: identifier "task_num" is undefined
+          LCD_ShawxNum(86,111,task_num,3,16,0x80);//实现任务执行次数
+main.c(172): error:  #20: identifier "POINT_COLOR" is undefined
+      POINT_COLOR=BLACK;
+main.c(174): warning:  #223-D: function "LCD_DrawRectangle" declared implicitly
+      LCD_DrawRectangle(5,110,115,314);
+main.c(175): warning:  #223-D: function "LCD_DrawLine" declared implicitly
+      LCD_DrawLine(5,130,115,130);
+main.c(177): warning:  #223-D: function "LCD_ShawString" declared implicitly
+      LCD_ShawString(6,111,110,16,16,"Task1 run:000");
+main.c(182): error:  #7: unrecognized token
+          printf("任务2已运行惯：%d次\r\n"，task2_num);
+main.c(182): warning:  #224-D: the format string requires additional arguments
+          printf("任务2已运行惯：%d次\r\n"，task2_num);
+main.c(182): error:  #18: expected a ")"
+          printf("任务2已运行惯：%d次\r\n"，task2_num);
+main.c(183): warning:  #223-D: function "LCD_Fill" declared implicitly
+          LCD_Fill(6,131,114,313,lcd_discolor[task2_num%14]);//填充区域
+main.c(184): warning:  #223-D: function "LCD_ShawxNum" declared implicitly
+          LCD_ShawxNum(86,111,task_num,3,16,0x80);//实现任务执行次数
+main.c(184): error:  #20: identifier "task_num" is undefined
+          LCD_ShawxNum(86,111,task_num,3,16,0x80);//实现任务执行次数
+main.c: 16 warnings, 24 errors
+"..\OBJ\LED.axf" - 24 Error(s), 16 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01
